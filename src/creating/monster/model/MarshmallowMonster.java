@@ -23,4 +23,12 @@ public class MarshmallowMonster
 		this.monsterBellyButton = monsterBellyButton;
 		//this. makes it known that your are speaking about that this object is that
 	}
+	
+		public String toString()
+		{
+			String monsterInfo = "My monster has " + monsterLegs + " legs and it's name is  " + monsterName;
+			return monsterInfo;
+		}
+		
+	
 }
