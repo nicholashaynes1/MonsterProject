@@ -30,6 +30,62 @@ public class MarshmallowMonster
 					" It also has " + monsterEyes + " Eyes, it has " + monsterNose + " Nose(es) and has " + monsterHair + " hair(s)";
 			return monsterInfo;
 		}
-		
+	public String getmonsterName()
+	{
+	return monsterName;
+	}
+	public int getmonsterEyes()
+	{
+		return monsterEyes;
+	}
 	
+	public int monsterNose()
+	{
+		return monsterNose;
+	}
+	
+	public double monsterLegs()
+	{
+		return monsterLegs;
+	}
+	
+	public double monsterHair()
+	{
+		return monsterHair;
+	}
+	
+	private boolean monsterBellyButton()
+	{
+		return monsterBellyButton;
+	}
+	
+	public void setmonsterName(String monsterName)
+	{
+		this.monsterName = monsterName;
+	}
+	
+	public void setmonsterEyes()
+	{
+		this.monsterEyes = monsterEyes;
+	}
+	
+	public void setmonsterNose()
+	{
+		this.monsterNose = monsterNose; 
+	}
+	
+	public void setmonsterLegs()
+	{
+		this.monsterLegs = monsterLegs;
+	}
+	
+	public void setmonsterHair()
+	{
+		this.monsterHair = monsterHair;
+	}
+	
+	public void setmonsterBellyButton()
+	{
+		this.monsterBellyButton = monsterBellyButton;
+	}
 }
