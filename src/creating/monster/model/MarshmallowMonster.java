@@ -2,12 +2,12 @@ package creating.monster.model;
 
 public class MarshmallowMonster
 {
-	private String monsterName;
-	private int monsterEyes;
-	private int monsterNose;
-	private double monsterLegs;
-	private double monsterHair;
-	private boolean monsterBellyButton;
+	private String MonsterName;
+	private int MonsterEyes;
+	private int MonsterNose;
+	private double MonsterLegs;
+	private double MonsterHair;
+	private boolean MonsterBellyButton;
 	
 	private MarshmallowMonster()
 	{
@@ -15,77 +15,77 @@ public class MarshmallowMonster
 	}
 	public MarshmallowMonster(String monsterName, int monsterEyes, int monsterNose, double monsterLegs, double monsterHair, boolean monsterBellyButton)
 	{
-		this.monsterName = monsterName;
-		this.monsterEyes = monsterEyes;
-		this.monsterNose = monsterNose;
-		this.monsterLegs = monsterLegs;
-		this.monsterHair = monsterHair;
-		this.monsterBellyButton = monsterBellyButton;
+		this.MonsterName = monsterName;
+		this.MonsterEyes = monsterEyes;
+		this.MonsterNose = monsterNose;
+		this.MonsterLegs = monsterLegs;
+		this.MonsterHair = monsterHair;
+		this.MonsterBellyButton = monsterBellyButton;
 		//this. makes it known that your are speaking about that this object is that
 	}
 	
 		public String toString()
 		{
-			String monsterInfo = "My monster has " + monsterLegs + " legs and it's name is  " + monsterName +
-					" It also has " + monsterEyes + " Eyes, it has " + monsterNose + " Nose(es) and has " + monsterHair + " hair(s)";
+			String monsterInfo = "My monster has " + MonsterLegs + " legs and it's name is  " + MonsterName +
+					" It also has " + MonsterEyes + " Eyes, it has " + MonsterNose + " Nose(es) and has " + MonsterHair + " hair(s)";
 			return monsterInfo;
 		}
 	public String getmonsterName()
 	{
-	return monsterName;
+	return MonsterName;
 	}
 	public int getmonsterEyes()
 	{
-		return monsterEyes;
+		return MonsterEyes;
 	}
 	
 	public int monsterNose()
 	{
-		return monsterNose;
+		return MonsterNose;
 	}
 	
 	public double monsterLegs()
 	{
-		return monsterLegs;
+		return MonsterLegs;
 	}
 	
 	public double monsterHair()
 	{
-		return monsterHair;
+		return MonsterHair;
 	}
 	
 	private boolean monsterBellyButton()
 	{
-		return monsterBellyButton;
+		return MonsterBellyButton;
 	}
 	
 	public void setmonsterName(String monsterName)
 	{
-		this.monsterName = monsterName;
+		this.MonsterName = monsterName;
 	}
 	
 	public void setmonsterEyes()
 	{
-		this.monsterEyes = monsterEyes;
+		this.MonsterEyes = MonsterEyes;
 	}
 	
 	public void setmonsterNose()
 	{
-		this.monsterNose = monsterNose; 
+		this.MonsterNose = MonsterNose; 
 	}
 	
 	public void setmonsterLegs()
 	{
-		this.monsterLegs = monsterLegs;
+		this.MonsterLegs = MonsterLegs;
 	}
 	
 	public void setmonsterHair()
 	{
-		this.monsterHair = monsterHair;
+		this.MonsterHair = MonsterHair;
 	}
 	
 	public void setmonsterBellyButton()
 	{
-		this.monsterBellyButton = monsterBellyButton;
+		this.MonsterBellyButton = MonsterBellyButton;
 	}
 }
