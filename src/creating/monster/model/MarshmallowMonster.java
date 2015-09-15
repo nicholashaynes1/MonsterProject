@@ -15,11 +15,11 @@ public class MarshmallowMonster
 	}
 	public MarshmallowMonster(String monsterName, int monsterEyes, int monsterNose, double monsterLegs, double monsterHair, boolean monsterBellyButton)
 	{
-		this.MonsterName = monsterName;
-		this.MonsterEyes = monsterEyes;
-		this.MonsterNose = monsterNose;
-		this.MonsterLegs = monsterLegs;
-		this.MonsterHair = monsterHair;
+		this.MonsterName = MonsterName;
+		this.MonsterEyes = MonsterEyes;
+		this.MonsterNose = MonsterNose;
+		this.MonsterLegs = MonsterLegs;
+		this.MonsterHair = MonsterHair;
 		this.MonsterBellyButton = monsterBellyButton;
 		//this. makes it known that your are speaking about that this object is that
 	}
@@ -30,61 +30,61 @@ public class MarshmallowMonster
 					" It also has " + MonsterEyes + " Eyes, it has " + MonsterNose + " Nose(es) and has " + MonsterHair + " hair(s)";
 			return monsterInfo;
 		}
-	public String getmonsterName()
+	public String getMonsterName()
 	{
 	return MonsterName;
 	}
-	public int getmonsterEyes()
+	public int getMonsterEyes()
 	{
 		return MonsterEyes;
 	}
 	
-	public int monsterNose()
+	public int MonsterNose()
 	{
 		return MonsterNose;
 	}
 	
-	public double monsterLegs()
+	public double MonsterLegs()
 	{
 		return MonsterLegs;
 	}
 	
-	public double monsterHair()
+	public double MonsterHair()
 	{
 		return MonsterHair;
 	}
 	
-	private boolean monsterBellyButton()
+	private boolean MonsterBellyButton()
 	{
 		return MonsterBellyButton;
 	}
 	
-	public void setmonsterName(String monsterName)
+	public void setMonsterName(String monsterName)
 	{
 		this.MonsterName = monsterName;
 	}
 	
-	public void setmonsterEyes()
+	public void setMonsterEyes()
 	{
 		this.MonsterEyes = MonsterEyes;
 	}
 	
-	public void setmonsterNose()
+	public void setMonsterNose()
 	{
 		this.MonsterNose = MonsterNose; 
 	}
 	
-	public void setmonsterLegs()
+	public void setMonsterLegs()
 	{
 		this.MonsterLegs = MonsterLegs;
 	}
 	
-	public void setmonsterHair()
+	public void setMonsterHair()
 	{
 		this.MonsterHair = MonsterHair;
 	}
 	
-	public void setmonsterBellyButton()
+	public void setMonsterBellyButton()
 	{
 		this.MonsterBellyButton = MonsterBellyButton;
 	}

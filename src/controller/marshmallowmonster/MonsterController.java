@@ -35,7 +35,16 @@ public class MonsterController
 	private void askQuestions()
 	{
 		System.out.println("I want a new name, Type one out?");
+		
 		String newMonsterName = monsterScanner.next();
-		NickMonster.setmonsterName(newMonsterName);
+		NickMonster.setMonsterName(newMonsterName);
+		
+		System.out.println("How many Eyes doI have?");
+		
+		int newMonsterEyes = monsterScanner.nextInt();
+		NickMonster.setMonsterEyes(newMonsterEyes);
+		
+		int newMonsterNose = monsterScanner.nextInt();
+		NickMonster.setMonsterNose(newMonsterNose);
 	}
 }
