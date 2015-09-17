@@ -35,16 +35,27 @@ public class MonsterController
 	private void askQuestions()
 	{
 		System.out.println("I want a new name, Type one out?");
-		
 		String newMonsterName = monsterScanner.next();
 		NickMonster.setMonsterName(newMonsterName);
 		
 		System.out.println("How many Eyes doI have?");
-		
 		int newMonsterEyes = monsterScanner.nextInt();
 		NickMonster.setMonsterEyes(newMonsterEyes);
 		
+		System.out.println("How many noses do I have?");
 		int newMonsterNose = monsterScanner.nextInt();
 		NickMonster.setMonsterNose(newMonsterNose);
+		
+		System.out.println("How many legs do I have?");
+		double newMonsterlegs = monsterScanner.nextDouble();
+		NickMonster.setMonsterLegs(newMonsterlegs);
+		
+		System.out.println("How many hairs do I have?");
+		double newMonsterHair = monsterScanner.nextDouble();
+		NickMonster.setMonsterHair(newMonsterHair);
+		
+		System.out.println("Do I have a bellybutton? (true or false)");
+		boolean newMonsterBellyButton = monsterScanner.nextBoolean();
+		NickMonster.setMonsterBellyButton(newMonsterBellyButton);
 	}
 }

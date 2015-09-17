@@ -64,28 +64,28 @@ public class MarshmallowMonster
 		this.MonsterName = monsterName;
 	}
 	
-	public void setMonsterEyes()
+	public void setMonsterEyes(int monsterEyes)
 	{
-		this.MonsterEyes = MonsterEyes;
+		this.MonsterEyes = monsterEyes;
 	}
 	
-	public void setMonsterNose()
+	public void setMonsterNose(int monsterNose)
 	{
-		this.MonsterNose = MonsterNose; 
+		this.MonsterNose = monsterNose; 
 	}
 	
-	public void setMonsterLegs()
+	public void setMonsterLegs(double monsterLegs)
 	{
-		this.MonsterLegs = MonsterLegs;
+		this.MonsterLegs = monsterLegs;
 	}
 	
-	public void setMonsterHair()
+	public void setMonsterHair(double monsterHair)
 	{
-		this.MonsterHair = MonsterHair;
+		this.MonsterHair = monsterHair;
 	}
 	
-	public void setMonsterBellyButton()
+	public void setMonsterBellyButton(boolean monsterBellyButton)
 	{
-		this.MonsterBellyButton = MonsterBellyButton;
+		this.MonsterBellyButton = monsterBellyButton;
 	}
 }
