@@ -1,18 +1,25 @@
 package controller.marshmallowmonster;
 
+import marshmallow.view.MonsterGui;
 import creating.monster.model.MarshmallowMonster;
 import marshmallow.view.MonsterDisplay;
 import java.util.Scanner;
 
+
 public class MonsterController
 {
+	private MonsterGui myPopups;
+	
 	private MarshmallowMonster NickMonster;
 	private MarshmallowMonster userMonster;
 	private MonsterDisplay myDisplay;
 	private Scanner monsterScanner;
 	
+
 	public MonsterController()
 	{
+		myPopups = new MonsterGui();
+		
 		String Name = "Capatalism";
 		int Eyes = 5;
 		int Nose = 4;
@@ -82,6 +89,9 @@ public class MonsterController
 		int userEyes;
 		userEyes = monsterScanner.nextInt();
 		
+		
+		
+		
 		System.out.println("How many noses does it have?");
 		int userNose;
 		userNose = monsterScanner.nextInt();
@@ -111,4 +121,24 @@ public class MonsterController
 		
 		
 	}
+	private boolean isInteger(String input)
+	{
+		boolean isInt = false;
+		
+		try
+		{
+			int validInt = Integer.parseInt(input);
+			isInt = true;
+		}
+		catch(NumberFormatException error)
+		{
+			myPopups.displayResponse("That is not a valid integer");
+		}
+		
+		return isInt;
+	}
+	
+	
+	
+	
 }
