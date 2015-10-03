@@ -18,7 +18,7 @@ public class MonsterController
 
 	public MonsterController()
 	{
-		myPopups = new MonsterGui();
+		
 		
 		String Name = "Capatalism";
 		int Eyes = 5;
@@ -37,6 +37,38 @@ public class MonsterController
 	
 	public void start()
 	{
+		myPopups = new MonsterGui();
+		
+		String monsterPopupName = myPopups.getAnswer("what is your monster name?");
+		myPopups.displayResponse("Your monsters name is " + monsterPopupName);
+		
+		
+		int monsterPopupAge;
+		String tempAge = myPopups.getAnswer("how many noses does it have?");
+		
+		while(!isInteger(tempAge))
+		{
+			tempAge
+		}
+		
+		if(isInteger(tempAge))
+		{
+			monsterPopupAge = Integer.parseInt(tempAge);
+		}
+		
+		else
+		{
+			monsterPopupAge = -1;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		myDisplay.displayinfo(NickMonster.toString());
 		askQuestions();
 		myDisplay.displayinfo("Updated monster info" + userMonster.toString());
