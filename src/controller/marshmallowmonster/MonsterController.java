@@ -40,28 +40,111 @@ public class MonsterController
 		myPopups = new MonsterGui();
 		
 		String monsterPopupName = myPopups.getAnswer("what is your monster name?");
-		myPopups.displayResponse("Your monsters name is " + monsterPopupName);
 		
 		
-		int monsterPopupAge;
-		String tempAge = myPopups.getAnswer("how many noses does it have?");
 		
-		while(!isInteger(tempAge))
+		int monsterPopupEyes;
+		String tempEyes = myPopups.getAnswer("how many noses does it have?");
+		
+		while(!isInteger(tempEyes))
 		{
-			tempAge
+			tempEyes = myPopups.getAnswer("please type in an integer value");
 		}
 		
-		if(isInteger(tempAge))
+		if(isInteger(tempEyes))
 		{
-			monsterPopupAge = Integer.parseInt(tempAge);
+			monsterPopupEyes = Integer.parseInt(tempEyes);
 		}
 		
 		else
 		{
-			monsterPopupAge = -1;
+			monsterPopupEyes = -1;
 		}
 		
 		
+		int monsterPopupNose;
+		String tempNose = myPopups.getAnswer("How many eyes does your monster have?");
+		
+		while(!isInteger(tempNose))
+		{
+			tempNose = myPopups.getAnswer("Please type in a valid int");
+		}
+		
+		if(isInteger(tempNose))
+		{
+			monsterPopupNose = Integer.parseInt(tempNose);
+		}
+		
+		else
+		{
+			monsterPopupNose = -1;
+		}
+		
+		
+		double monsterPopupLegs;
+		String tempLegs = myPopups.getAnswer("how many legs does your monster have?");
+		
+		
+		while(!isDouble(tempLegs))
+		{
+			tempLegs = myPopups.getAnswer("Please type in a valid double");
+		}
+		
+		if(isDouble(tempLegs))
+		{
+			monsterPopupLegs = Double.parseDouble(tempLegs);
+		}
+		
+		else
+		{
+			monsterPopupLegs = -1;
+		}
+			
+			
+		double monsterPopupHair;
+		String tempHair = myPopups.getAnswer("how many/ much hair(s) does your monster have?");
+			
+		while(!isDouble(tempHair))
+		{
+			tempHair = myPopups.getAnswer("Please type in a valid double");
+		}
+			
+		if(isDouble(tempHair))
+		{
+			monsterPopupHair = Double.parseDouble(tempHair);
+		}
+		
+		else
+		{
+			monsterPopupHair = -1;
+		}
+		
+		
+		int monsterPopupHasBellyButton = 0;
+		String tempBellyButton = myPopups.getAnswer("Does your monster have 1 belly button or 0 bellyButtons?");
+		
+		while(!isInteger(tempBellyButton))
+		{
+			tempBellyButton = myPopups.getAnswer("Please use one or zero to answer.");
+		}
+		
+		if(isInteger(tempBellyButton))
+		{
+			monsterPopupHasBellyButton = Integer.parseInt(tempBellyButton);
+				
+				if(monsterPopupHasBellyButton < 0)
+				{
+					tempBellyButton = myPopups.getAnswer("Please choose either if it has one or zero bellybuttons.");
+				}
+			
+				if(monsterPopupHasBellyButton > 1 )
+				{
+					tempBellyButton = myPopups.getAnswer("Please choose either if it has one or zero bellybuttons.");
+				}
+		
+		}
+		
+		myPopups.displayResponse("Your monsters name is " + monsterPopupName+ " it has " +monsterPopupEyes+ " eye(s), " +monsterPopupNose+ " nose(s), " +monsterPopupLegs+ " leg(s) " +monsterPopupHair+ " hair(s)" +monsterPopupHasBellyButton+ " bellybutton(s)" );
 		
 		
 		
@@ -170,7 +253,23 @@ public class MonsterController
 		return isInt;
 	}
 	
-	
+	private boolean isDouble(String input)
+	{
+		boolean isDouble = false;
+		
+		try
+		{
+			double validDouble = Double.parseDouble(input);
+			isDouble = true;
+		}
+		
+		catch(NumberFormatException error)
+		{
+			myPopups.displayResponse("Please type in a valid decimal value!");
+			
+		}
+		return isDouble;
+	}	
 	
 	
 }
